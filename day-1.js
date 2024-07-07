@@ -7,8 +7,8 @@ let messageParagraph = document.getElementById("messageParagraph");
 function day1Part1() {
   let playerOne;
   playerOne = {};
-  playerOne.name = prompt("What is your name?");
-  playerOne.hiScore = prompt("What is your all time hi-score?");
+  playerOne.name = prompt("How old are you?");
+  playerOne.hiScore = prompt("When is your birthday?");
   // Try it!
   // TODO: add a new question for the player. Assign the answer to the playerOne Object.
 
