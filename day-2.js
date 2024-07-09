@@ -25,15 +25,17 @@ part1.onclick = day2Part1;
 
 function day2Part2() {
   let bank;
-  let bankNumber;
+  let bankNumber; 
   let carNumber = 5000;
 
   alert("Try it!");
   // Try it!
   // TODO: Prompt the user for how much in in their bank account. Convert it to a number.
   // 1. Ask the user for data
+  bank = prompt("How much money is in your bank account?");
 
   // 2. convert it to a number
+  bankNumber = Number(bank);
   
 
   // 3. use a math expression with the > operator to say if the statements is true or false.
@@ -54,11 +56,14 @@ function day2Part3() {
   // TODO: Prompt the user for how much in in their wallet. Convert it to a number, and tell them true or false if they can buy a TV.
 
   // 1. Ask the user for data
+  wallet = prompt("How much money is in your wallet?");
 
   // 2. convert it to a number
+  walletNumber = Number(wallet);
 
 
   // 3. use a math expression with the > operator to say if the statements is true or false.
+  messageParagraph.innerHTML = `The Tv cost ${tvNumber}. You have ${walletNumber} in your wallet. You can afford the Tv: ${walletNumber > tvNumber}`
 
 
 }
@@ -74,11 +79,14 @@ function day2Part4() {
   // Try it!
   // TODO: Prompt the user for how much in in their bank account. Convert it to a number, and tell them true or false if they can buy a rocket.
   // 1. Ask the user for data
+  bank = prompt("How much is in your bank account?");
 
   // 2. convert it to a number
+  bankNumber = Number(bank);
 
 
   // 3. use a math expression with the > operator to say if the statements is true or false.
+  messageParagraph.innerHTML = `The cost of the rocket is ${rocketNumber}. You have ${bankNumber} in your account. You can afford the rocket: ${bankNumber > rocketNumber}`
 
 
 }
